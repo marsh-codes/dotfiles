@@ -5,21 +5,10 @@ return {
     config = function()
       local config = require("nvim-treesitter.configs")
       config.setup({
-        auto_install = false,
-        ensure_installed = {
-          "bash",
-          "ruby",
-          "html",
-          "css",
-          "scss",
-          "javascript",
-          "typescript",
-          "json",
-          "lua",
-        },
+        auto_install = true,
         highlight = { enable = true },
-        indent = { enable = false },
+        indent = { enable = true },
       })
-    end
-  }
+    end,
+  },
 }
